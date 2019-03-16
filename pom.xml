@@ -8,10 +8,10 @@
 		<version>2.1.3.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
+	<groupId>top.towing</groupId>
 	<artifactId>demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>demo</name>
+	<name>Spring Data Jpa Demo</name>
 	<description>Demo project for Spring Data JPA</description>
 
 	<properties>

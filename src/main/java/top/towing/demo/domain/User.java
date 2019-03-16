@@ -1,4 +1,4 @@
-package com.example.demo.domain;
+package top.towing.demo.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

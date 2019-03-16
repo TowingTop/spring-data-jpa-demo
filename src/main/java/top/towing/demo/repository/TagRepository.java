@@ -1,7 +1,8 @@
-package com.example.demo.dao;
+package top.towing.demo.repository;
 
-import com.example.demo.domain.Tag;
 import org.springframework.data.jpa.repository.JpaRepository;
+
+import top.towing.demo.domain.Tag;
 
 public interface TagRepository extends JpaRepository<Tag, Long> {
     Tag findByTagName(String tagName);

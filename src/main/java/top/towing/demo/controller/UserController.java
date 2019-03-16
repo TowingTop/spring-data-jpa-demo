@@ -1,9 +1,10 @@
-package com.example.demo.controller;
+package top.towing.demo.controller;
 
-import com.example.demo.dao.TagRepository;
-import com.example.demo.dao.UserRepository;
-import com.example.demo.domain.Tag;
-import com.example.demo.domain.User;
+import top.towing.demo.domain.Tag;
+import top.towing.demo.domain.User;
+import top.towing.demo.repository.TagRepository;
+import top.towing.demo.repository.UserRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -43,7 +44,7 @@ public class UserController {
 
         // look up my tags
         List<String> tagNames2 = Arrays.asList("qux", "quux", "quuz");
-        List<Tag> tags2  = tagNames.stream().map(tagName -> {
+        List<Tag> tags2  = tagNames2.stream().map(tagName -> {
             Tag tag = tagRepository.findByTagName(tagName);
             return tag;
         }).collect(Collectors.toList());

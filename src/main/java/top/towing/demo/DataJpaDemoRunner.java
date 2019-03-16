@@ -1,9 +1,10 @@
-package com.example.demo;
+package top.towing.demo;
 
-import com.example.demo.dao.TagRepository;
-import com.example.demo.dao.TagTypeRepository;
-import com.example.demo.domain.Tag;
-import com.example.demo.domain.TagType;
+import top.towing.demo.domain.Tag;
+import top.towing.demo.domain.TagType;
+import top.towing.demo.repository.TagRepository;
+import top.towing.demo.repository.TagTypeRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -13,7 +14,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 @Component
-public class DemoRunner implements ApplicationRunner {
+public class DataJpaDemoRunner implements ApplicationRunner {
     @Autowired
     private TagRepository tagRepository;
 
